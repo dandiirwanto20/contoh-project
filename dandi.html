@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dandi Irwanto</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+        <header>
+            <div class="jum">
+                <h1 style="text-shadow: 4px 4px 10px black;">Kota Rembang</h1>
+            </div>
+        <nav>
+            <ul>
+                <li>
+                <div class="dropdown">
+                <button onclick="myFunc()" class="dropbtn"><span> Menu </span></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#sejarah">Sejarah</a>
+                        <a href="#geografis">Geografis</a>
+                        <a href="#kuliner">Kuliner</a>
+                    </div>
+                </div>
+                <li></li>
+                <button class="btn dark" onclick="myFunction()">Dark Mode</button>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <div id="content">
+        <article id="sejarah" class="card">
+            <h2 id="sejarah" class="z">Sejarah</h2>
+            <img src="assets/history.jpg" class="featured-image">
+            <p class="x">Tahun Saka 1336 ada orang Campa Banjarmlati berjumlah delapan keluarga yang pandai 
+            membuat gula tebu ketika ada di negaranya…”Orang-orang tadi pindah untuk membuat gula merah 
+            yang tidak dapat dipatahkan itu. Berangkatnya melalui lautan menuju arah barat hingga mendarat 
+            di sekitar sungai yang pinggir dan kanan kirinya tumbuh tak teratur pohon bakau. Kepindahannya 
+            itu dipimpin oleh kakek Pow Ie Din; setelah mendarat kemudian mengadakan doa dan semadi, 
+            kemudian dia mulai menebang pohon bakau tadi yang kemudian diteruskan oleh orang-orang lainnya.
+            Tanah lapang itu kemudian di buat tegalan dan pekarangan serta perumahan yang selanjutnya menjadi 
+            perkampungan itu dinamakan kampung: KABONGAN; mengambil kata dari sebutan pohon bakau, 
+            menjadi Ka-bonga-an (Kabongan),…. Pada suatu hari saat fajar menyingsing 
+            di bulan Waisaka; orang-orang akan mulai ngrembang (mbabat,Ind: memangkas) tebu. 
+            Sebelum dimulai mbabat diadakan upacara suci Sembayang dan semadi di tempat tebu 
+            serumpun yang akan dikepras/dipangkas dua pohon, untuk tebu “Penganten”.Upacara pengeprasan itu dinamakan
+            “ngRembang”, sampai dijadikan nama Kota Rembang hingga saat ini.</p>
+        </article>
+        
+        <article id="geografis" class="card">
+            <h2 id="geografis" class="z">Geografi</h2>
+            <img src="assets/geografi.jpg" class="featured-image">
+            <p class="x">Kabupaten Rembang terletak di ujung timur laut Provinsi Jawa Tengah dan dilalui Jalan Pantai Utara Jawa 
+            (Jalur Pantura), terletak pada garis koordinat 111000' - 111030' Bujur Timur dan 6030' - 706' 
+            Lintang Selatan.</p>
+        </article>
+
+        <article id="kuliner" class="card">
+            <h2 id="kuliner" class="z">Kuliner</h2>
+            <img src="assets/lontong.jpg" width="250px" class="featured-image">
+            <p class="x">Lontong tuyuhan, salah satu makanan khas daerah Rembang yang sudah dikenal banyak orang. 
+            Disebut lontong tuyuhan karena pembuat dan penjual makanan ini dari Desa Tuyuhan, Kecamatan Pancur.
+            Ingin tahu rasanya, datang sendiri di pusatnya di tepi jalan desa beraspal jurusan Lasem-Pandan, 
+            tepatnya yang melintas di Desa Tuyuhan.</p>
+        </article>
+        </div>
+        <aside>
+            <article class="profil card">
+                <header>
+                <h2>Profil</h2>
+                <figure>
+                <img src="assets/ss.jpg" alt="foto">
+                <figcaption>Dand</figcaption>
+            </figure>
+            </header>
+            <section>
+                <h2>BIODATA</h2>
+                <table>
+                   <tr>
+                      <th>Nama</th>
+                      <td>Dandi Irwanto</td>
+                   </tr>
+                   <tr>
+                       <th>Sekolah</th>
+                       <td>UTDI</td>
+                   </tr>
+                   <tr>
+                      <th>Tanggal Lahir</th>
+                      <td>20 Desember 2000</td>
+                   </tr>
+            </table>
+             </section>
+            </article>
+        </aside>
+    </main>
+        <footer>
+            <p>Author: Dandi Irwanto &#169; 2022<br>
+                <a href="mailto:dandi.ir20@gmail.com">dandi.ir20@gmail.com</a></p>
+        </footer>
+
+        <script>
+            window.alert("Selamat Datang!");
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+
+            function myFunc() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+                // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
